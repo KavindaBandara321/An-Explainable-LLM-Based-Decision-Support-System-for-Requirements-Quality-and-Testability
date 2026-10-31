@@ -22,7 +22,7 @@ DIMENSIONS = [
     ("D3", "Atomicity / minimality", "Several features in one story, or extra notes/explanations in the text."),
     ("D4", "Unambiguity", "Vague or subjective words, ambiguous pronouns, loopholes ('if possible')."),
     ("D5", "Verifiability", "A tester could not write a clear pass/fail check: unmeasurable claims, open-ended terms, no observable outcome."),
-    ("D6", "Contextual completeness", "Actor too general ('a user'), or an essential rule, condition or edge case is missing."),
+    ("D6", "Contextual completeness", "Actor too general ('a user', 'someone', 'people'), or essential information is absent (which data, fields or result)."),
 ]
 
 
