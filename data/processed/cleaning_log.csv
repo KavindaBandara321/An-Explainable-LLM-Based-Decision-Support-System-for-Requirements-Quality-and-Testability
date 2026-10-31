@@ -1,0 +1,11 @@
+project,line_no,action,text
+g02-federalspending,11,dropped (duplicate),"As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership."
+g02-federalspending,30,dropped (duplicate),"As an Agency user, I want to be able to include a large number of flexfields without performance impact."
+g02-federalspending,62,dropped (duplicate),"As a user, I want to access the raw agency published files from FABS via USAspending."
+g03-loudoun,46,dropped (duplicate),"As an Applicant, I want to Complete Building Development Project, so that I can receive any posted bond and/or obtain occupancy."
+g12-camperplus,54,dropped (duplicate),"As a camp worker, I want to be able to see which campers I am in charge of and where, so that I can make sure I am doing my job properly."
+g16-mis,35,dropped (not a user story),Auditing & Reporting.
+g16-mis,48,joined to previous line,bidirectionally with the repository.
+g19-alfred,138,dropped (duplicate),"As a developer, I want to have the ALFRED API to reduce the work to achieve my goals."
+g23-archivesspace,8,joined to previous line,to support data migration integrity testing.
+g27-culrepo,115,dropped (duplicate),"As a data curator, I want to upload a new version of an item that has changed, while still allowing old versions to be accessed."
