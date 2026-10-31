@@ -1,60 +1,55 @@
 story_id,project,line_no,text,split,pilot
 g02_001,g02-federalspending,1,"As a Data user, I want to have the 12-19-2017 deletions processed.",test,False
 g02_012,g02-federalspending,12,"As a Broker user, I want to Upload and Validate the error message to have accurate text.",test,False
-g02_014,g02-federalspending,14,"As a Website user, I want to access published FABS files, so that I can see the new files as they come in.",test,False
 g02_024,g02-federalspending,24,"As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.",test,False
 g02_028,g02-federalspending,28,"As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.",dev,True
 g02_043,g02-federalspending,43,"As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.",test,False
 g02_045,g02-federalspending,45,"As a broker team member, I want to make some updates to the SQL codes for clarity.",test,False
 g02_048,g02-federalspending,48,"As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.",dev,False
-g02_050,g02-federalspending,50,"As a broker team member, I want to ensure the Broker resources, validations, and P&P pages are updated appropriately for the launch of FABS and DAIMS v1.1.",dev,True
+g02_050,g02-federalspending,50,"As a broker team member, I want to ensure the Broker resources, validations, and P&P pages are updated appropriately for the launch of FABS and DAIMS v1.1.",test,False
 g02_058,g02-federalspending,58,"As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.",dev,False
 g02_072,g02-federalspending,72,"As an Agency user, I want historical FPDS data loaded.",dev,False
 g02_076,g02-federalspending,76,"As a Developer , I want to provide FABS groups that function under the FREC paradigm.",test,False
 g02_077,g02-federalspending,77,"As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.",test,False
-g02_085,g02-federalspending,85,"As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.",test,False
+g02_085,g02-federalspending,85,"As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.",dev,True
 g02_088,g02-federalspending,88,"As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.",test,False
 g03_001,g03-loudoun,1,"As a Public User, I want to Search for Information, so that I can obtain publicly available information concerning properties, County services, processes and other general information.",dev,False
 g03_004,g03-loudoun,4,"As a Customer, I want to Create a Customer Portal User Account, so that I can log on to the Customer Portal and perform transactions that first require user authentication.",dev,False
 g03_006,g03-loudoun,6,"As an Applicant, I want to Submit Supporting Documentation, so that I can satisfy documentation requirements for my application.",test,False
-g03_009,g03-loudoun,9,"As an Applicant, I want to Modify my Application, so that I can successfully change information on an application.",test,False
 g03_013,g03-loudoun,13,"As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.",dev,False
 g03_014,g03-loudoun,14,"As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved.",test,False
-g03_027,g03-loudoun,27,"As a Staff member, I want to Develop a Staff Report, so that I can publish and distribute the report according to business rules.",dev,True
+g03_027,g03-loudoun,27,"As a Staff member, I want to Develop a Staff Report, so that I can publish and distribute the report according to business rules.",test,False
 g03_028,g03-loudoun,28,"As a Staff member, I want to Manage Hearing Calendars, so that I can track hearing-related activities and due dates.",test,False
 g03_031,g03-loudoun,31,"As an Applicant, I want to Satisfy Hearing Requirements, so that I can ensure all pre-hearing requirements are satisfied in time for the hearing.",test,False
 g03_032,g03-loudoun,32,"As a Staff member, I want to Prepare for and Support Hearing Execution, so that I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",test,False
 g03_035,g03-loudoun,35,"As a Plan Review Staff member, I want to Assign Plans for Review, so that I can ensure plans have been assigned to the appropriate Plan Reviewer.",test,False
-g03_044,g03-loudoun,44,"As a Staff member, I want to Manage Bonds, so that I can track and manage bonds throughout the lifecycle of the project until release.",test,False
+g03_044,g03-loudoun,44,"As a Staff member, I want to Manage Bonds, so that I can track and manage bonds throughout the lifecycle of the project until release.",dev,True
 g03_047,g03-loudoun,47,"As a Customer, I want to Request Inspection, so that a County inspector is assigned to perform an inspection of my project.",test,False
 g03_049,g03-loudoun,49,"As an Inspection Staff Supervisor, I want to Assign Inspections, so that I can make sure the appropriate Inspector receives the work.",test,False
 g03_057,g03-loudoun,57,"As a Technical Staff member, I want to update the GIS Property Management, so that I can successfully update the transactional Parcel Pin to reference the GIS layer where the Split or Merged Parcel Pin exists.",dev,True
-g04_004,g04-recycling,4,"As a user, I want to be able to get the hours of each recycling facility, so that I can arrange drop-offs on my off days or during after-work hours.",test,False
-g04_007,g04-recycling,7,"As a user, I want to add donation centers as favorites on my profile, so that I can view them later.",dev,True
-g04_009,g04-recycling,9,"As a user, I want to be able to view a map display of the public recycling bins around my area.",dev,False
+g04_004,g04-recycling,4,"As a user, I want to be able to get the hours of each recycling facility, so that I can arrange drop-offs on my off days or during after-work hours.",dev,True
+g04_009,g04-recycling,9,"As a user, I want to be able to view a map display of the public recycling bins around my area.",dev,True
 g04_013,g04-recycling,13,"As a user, I want to view user documentation for the website, so that I know how to use the web app.",test,False
 g04_014,g04-recycling,14,"As a user, I want to get feedback when I enter an invalid zip code.",test,False
 g04_018,g04-recycling,18,"As a user, I want to be able to check transaction history and keep a record of it, so that I can go back when needed.",test,False
 g04_025,g04-recycling,25,"As an employee, I want to access the route planning system during work, so that I can be guided through the neighbourhood.",test,False
 g04_031,g04-recycling,31,"As a company, I want to have a website that is easy to use, so that I can upload or delete stuff step by step.",dev,False
-g04_032,g04-recycling,32,"As an employee, I want to get quick notifications, so that I can process cases the first time.",dev,True
+g04_032,g04-recycling,32,"As an employee, I want to get quick notifications, so that I can process cases the first time.",test,False
 g04_033,g04-recycling,33,"As a company accountant, I want to view all available activity fees online, so that I can easily create a bill statement.",test,False
 g04_041,g04-recycling,41,"As an admin, I want to view user error logs, so that I can fix or review any issues that are being faced by users of the system.",test,False
 g04_044,g04-recycling,44,"As a superuser, I want to view users' stats, so that I can view in real-time how many users have visited my recycling center information and their recyclable waste.",dev,False
 g04_047,g04-recycling,47,"As an admin, I want to be able to communicate directly with facilities, so that I can keep them updated about features we have on our website.",test,False
-g04_048,g04-recycling,48,"As a user, I want to be able to browse through the list of facolities and see which ones are environment-friendly, so that I can know for sure my waste is not going to leave a negative ecological footprint.",test,False
 g04_050,g04-recycling,50,"As a recyclingfacility representative, I want to have access to user stats and schedules, so that I can adjust my hours and/or upgrade equipment and capacity in order to be able to accomodate larger amounts of recyclable materials.",test,False
 g05_007,g05-openspending,7,"As a Platform Administrator, I want to be able to Hide any dataset already added as Public, So that I can maintain Public/Hidden status for other users.",test,False
 g05_011,g05-openspending,11,"As a Platform Administrator, I want to be able to delete any dataset published, So that I can deal with takedown requests, or clean up test datasets.",dev,True
-g05_013,g05-openspending,13,"As a Data Publishing User, I want to be able to edit the data source of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.",dev,True
+g05_013,g05-openspending,13,"As a Data Publishing User, I want to be able to edit the data source of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.",test,False
 g05_017,g05-openspending,17,"As a Data Publishing User, I want to be able to import data in Excel, So that I do not have to convert data formats in order to use the data packager.",dev,False
 g05_025,g05-openspending,25,"As a Data Publishing User, I want to be able to import data from Fiscal Data Package descriptor file, So that I do not have to convert data formats in order to use the data packager.",test,False
 g05_027,g05-openspending,27,"As a Data Publishing User, I want to be able to provide the Platform Administrator with additional GeoJSON sources, So that I can improve the map-based visualisations of my data.",test,False
 g05_035,g05-openspending,35,"As a Data Consuming User, I want to see textual descriptions that accompany embedded visualisations, So that I can more easily understand what I am viewing.",test,False
 g05_039,g05-openspending,39,"As a Data Consuming User, I want to be able to download an image ofa particular view state, So that I can use it offline.",dev,False
-g05_053,g05-openspending,53,"As an API User, I want to be able to get bordering regions|cities when I query a region|city, So that I can provider wider visual context for mapping visualisations.",test,False
+g05_053,g05-openspending,53,"As an API User, I want to be able to get bordering regions|cities when I query a region|city, So that I can provider wider visual context for mapping visualisations.",dev,True
 g05_065,g05-openspending,65,"As an API User, I want to be able to use data to get results from multiple datasets, So that I can build user experiences based on more than one dataset more easily.",dev,False
-g05_069,g05-openspending,69,"As an API User, I want to be able to normalise measures by geographical area, So that I work with datasets in reference to their contextual constraints.",test,False
 g05_083,g05-openspending,83,"As a User, I want to be able to set my own username, So that my data is more easily discoverable.",test,False
 g05_087,g05-openspending,87,"As a Data Publishing User, I want to be able to Hide a dataset that I have already added as Public, So that I can fix my mistakes or have a dataset primarily for my own use.",test,False
 g05_095,g05-openspending,95,"As a Data Publishing User, I want to know if my CSV file is valid, So that I can fix possible data issues before publishing it on Open Spending.",test,False
@@ -63,12 +58,11 @@ g08_001,g08-frictionless,1,"As a Developer, I want to get a Data Package into No
 g08_006,g08-frictionless,6,"As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.",test,False
 g08_010,g08-frictionless,10,"As a Researcher, I want to get a Data Package into SPSS in seconds, so that I can start using the data for doing analysis and visualizations.",dev,False
 g08_013,g08-frictionless,13,"As a Researcher, I want to get a Data Package into LibreOffice/OpenOffice in seconds, so that I can start using the data for doing analysis and visualizations.",test,False
-g08_014,g08-frictionless,14,"As a Developer, I want to get a Data Package into Python in seconds, so that I can start using the data for doing analysis and visualizations.",dev,True
+g08_014,g08-frictionless,14,"As a Developer, I want to get a Data Package into Python in seconds, so that I can start using the data for doing analysis and visualizations.",test,False
 g08_017,g08-frictionless,17,"As a Developer, I want to do exploratory data analysis in R and operationalize that analysis in Python, so that I can use the best tool for the job.",test,False
 g08_031,g08-frictionless,31,"As a Researcher, I want to be able to reference a remote-controlled vocabulary for my dataset, so that I can be sure that column of my dataset are valid against a single shard list of terms.",dev,False
 g08_034,g08-frictionless,34,"As a Developer, I want HDF5 integration, so that I can integrate data-packaged data with pipelines that use HDF5.",test,False
-g08_035,g08-frictionless,35,"As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",test,False
-g08_042,g08-frictionless,42,"As a Publisher, I would like an integration with Excel, so that I can output cleaned Data Packages.",test,False
+g08_042,g08-frictionless,42,"As a Publisher, I would like an integration with Excel, so that I can output cleaned Data Packages.",dev,True
 g08_046,g08-frictionless,46,"As a publisher, I want to be able to check that every time I update my data it is still good, so that I can catch errors early and store reliable data.",test,False
 g08_055,g08-frictionless,55,"As a Publisher, I want to add useful metadata or add in new data columns to make the dataset more useful.",dev,False
 g08_063,g08-frictionless,63,"As a developer, I would like to create a web socket protocol for Frictionless data tools, so that I can easily use data packages with additional data analysis tools.",test,False
@@ -77,12 +71,11 @@ g08_066,g08-frictionless,66,"As a ResearcherPublisher, I want to add a DOI to a 
 g10_001,g10-scrumalliance,1,"As a site member, I want to describe myself on my own page in a semi-structured way, so that others can learn about me.",dev,False
 g10_011,g10-scrumalliance,11,"As a site member, I want to mark my email address as private even if the rest of my profile is not, so that no one can contact me.",test,False
 g10_019,g10-scrumalliance,19,"As a site member, I want to subscribe to an RSS feed of news, so that I remain sufficiently and easily informed.",test,False
-g10_027,g10-scrumalliance,27,"As a site administrator, I want to set the listing fee per Other Course or Event, so that we have flexibility on what to charge in the future.",dev,True
+g10_027,g10-scrumalliance,27,"As a site administrator, I want to set the listing fee per Other Course or Event, so that we have flexibility on what to charge in the future.",test,False
 g10_032,g10-scrumalliance,32,"As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.",test,False
 g10_041,g10-scrumalliance,41,"As a visitor, I want to download presentations, PDFs, etc. on Scrum, so that I can learn from them or use them.",test,False
 g10_043,g10-scrumalliance,43,"As a recruiter, I want to post a help wanted ad, so that I can attract candidates.",test,False
-g10_045,g10-scrumalliance,45,"As a site admin, I want to be emailed whenever a job is submitted, so that I am aware of it and can decide if I want to post it.",test,False
-g10_048,g10-scrumalliance,48,"As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",test,False
+g10_048,g10-scrumalliance,48,"As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",dev,True
 g10_063,g10-scrumalliance,63,"As a site visitor, I want to subscribe to an RSS feed of articles, so that I can read them without visiting the site.",dev,False
 g10_065,g10-scrumalliance,65,"As a site editor, I want to have a prominent area on the home page where I can put special announcements not necessarily news or articles, so that I can give them additional exposure.",test,False
 g10_076,g10-scrumalliance,76,"As a site admin, I want to see the results for each trainer and averages for the class, so that I can identify any outliers or possible problems.",dev,False
@@ -91,35 +84,44 @@ g10_084,g10-scrumalliance,84,"As a site admin, I want to view all classes in a p
 g10_094,g10-scrumalliance,94,"As a member, I want to receive a reminder and a link, so that I can renew my membership.",test,False
 g11_001,g11-nsf,1,"As a team member, I want to see the first iteration of beta up on cloud.gov.",test,False
 g11_005,g11-nsf,5,"As a stakeholder, I want to see the results of user research, so that I can determine if the CMS is right for me.",dev,False
-g11_006,g11-nsf,6,"As a designer, I want to have a new social media wireframe, so that I can begin implementing design.",test,False
 g11_010,g11-nsf,10,"As a user researcher, I want to have the finalized OLPA task script, so that I can begin testing with internal users.",test,False
 g11_011,g11-nsf,11,"As a content editor, I want to be able to easily find content, so that I can edit it.",test,False
-g11_013,g11-nsf,13,"As a user researcher, I want to have the WIG prototype, so that I can finalize the second task script.",test,False
+g11_013,g11-nsf,13,"As a user researcher, I want to have the WIG prototype, so that I can finalize the second task script.",dev,True
 g11_019,g11-nsf,19,"As a team member, I want to have an updated acquisitions roadmap, so that I can plan accordingly.",test,False
 g11_029,g11-nsf,29,"As a user researcher, I want to continue scheduling interviews for hypothesis #1, so that I can be prepared to test our first prototype.",test,False
 g11_032,g11-nsf,32,"As an NSF employee, I want to know how brand guidelines are developed and maintained, so that I can incorporate them throughout the project.",dev,False
 g11_035,g11-nsf,35,"As a team member, I want to know what the first hypothesis is, so that I can start developing a prototype to test.",test,False
-g11_046,g11-nsf,46,"As an NSF member of the team, I want to have a place where I can access all the related reports and documentation, so that I can refer to it easily now and in the future.",dev,True
 g11_056,g11-nsf,56,"As a user researcher, I want to make sure the correct NSF people are invited to user interviews, so that they can observe the interviews and make recommendations accordingly.",dev,False
 g11_064,g11-nsf,64,"As a potential research participant, I want to learn about the research and leave my contact information.",test,False
 g11_066,g11-nsf,66,"As a site administrator, I want to understand how other similar organizations are handling visual design, so that I can make informed decisions about what appears to work well and what doesn't.",test,False
-g11_073,g11-nsf,73,"As a team member, I want to understand how work moves between UX/content > visual design > front end dev for a sprint cycle.",dev,True
-g12_004,g12-camperplus,4,"As a camp administrator, I want to be able to upload consent forms, so that campers or their parents can easily access the forms.",test,False
-g12_006,g12-camperplus,6,"As a camp administrator, I want to be able to schedule activities for campers, so that camp workers can easily keep track of who is where at all times.",dev,True
-g12_007,g12-camperplus,7,"As a camp administrator, I want to be able to automatically create nametags for campers, so that I can lower the amount of work I need to do.",dev,True
-g12_009,g12-camperplus,9,"As a camp administrator, I want to be able to set a reminders related to specific tasks that has to be done.",dev,False
+g11_073,g11-nsf,73,"As a team member, I want to understand how work moves between UX/content > visual design > front end dev for a sprint cycle.",test,False
+g12_004,g12-camperplus,4,"As a camp administrator, I want to be able to upload consent forms, so that campers or their parents can easily access the forms.",dev,True
+g12_006,g12-camperplus,6,"As a camp administrator, I want to be able to schedule activities for campers, so that camp workers can easily keep track of who is where at all times.",test,False
+g12_009,g12-camperplus,9,"As a camp administrator, I want to be able to set a reminders related to specific tasks that has to be done.",dev,True
 g12_013,g12-camperplus,13,"As a camp administrator, I want to keep track of the usage of internal camp facilities, so that I don't create conflicting schedules for the different camp groups.",test,False
 g12_014,g12-camperplus,14,"As a camp administrator, I want to create an avenue so parents can submit feedback and general concerns, so that I can keep improving the services I provide.",test,False
 g12_018,g12-camperplus,18,"As a camp administrator, I want to be able to make nametags faster, so that I don't have to spend two hours making 200+ nametags",test,False
 g12_020,g12-camperplus,20,"As a camp administrator, I want to be able to keep my information in one place, so that the admins next year can improve on the previous years.",dev,False
 g12_027,g12-camperplus,27,"As a camp administrator, I want to be able to schedule tasks/activities for a specific camp group, so that I can track each groups daily/weekly and monthly activities.",test,False
 g12_033,g12-camperplus,33,"As a camp administrator, I want to be able to delete parents from the database, so that I can keep my pages free of unneeded clutter.",dev,False
-g12_035,g12-camperplus,35,"As a camp administrator, I want to be able to see only events for a specific group/groups on the event calendar, so that I can easily read the data on the calendar without too much clutter.",test,False
 g12_045,g12-camperplus,45,"As a parent, I want to be able to connect with the staff in case of an emergency.",test,False
 g12_049,g12-camperplus,49,"As a camp worker, I want to be able to see which campers I am in charge of and where, so that I can make sure I am doing my job properly.",test,False
 g12_050,g12-camperplus,50,"As a camp worker, I would be able to submit a completion report for the tasks which was assigned to me.",test,False
 g12_053,g12-camperplus,53,"As a camp worker, I'm able to report necessary repairs to the manager that the camp is needed of.",test,False
-g14_001,g14-datahub,1,"As a Publisher, I want to publish a dataset, so that I can view just the dataset with a few people.",dev,True
+g13_004,g13-planningpoker,4,"As a moderator, I want to see all items we try to estimate this session, so that I can answer questions about the current story such as ""does this include ___"".",test,False
+g13_006,g13-planningpoker,6,"As a moderator, I want to add an item to the list of items to be estimated, so that so that we can be flexible and accommodate situations where we think of a new story while playing.",dev,True
+g13_007,g13-planningpoker,7,"As a moderator, I want to edit an item in the list of items to be estimated, so that I can make it better reflect the team's understanding of the item.",test,False
+g13_009,g13-planningpoker,9,"As a moderator, I want to show all estimates immediately, so that I can decide to show the estimates that have been given even though not all estimators have given their estimate.",dev,False
+g13_013,g13-planningpoker,13,"As a moderator, I want to estimate a story we estimated earlier in the session again, so that we can give a new estimate if we feel different about the story after estimating other related stories.",test,False
+g13_014,g13-planningpoker,14,"As a moderator, I want to import stories from a spreadsheet, so that I don't have to copy and paste each individual story.",test,False
+g13_018,g13-planningpoker,18,"As a moderator, I want to export a transcript of a game as a HTML file, so that I can save the stories and estimates locally.",test,False
+g13_020,g13-planningpoker,20,"As a moderator, I want to delete a game, so that stories and estimates for this game are no longer stored.",dev,False
+g13_027,g13-planningpoker,27,"As a moderator, I want to select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}, so that the team can use either the modified Fibonacci sequence or powers of 2.",dev,True
+g13_033,g13-planningpoker,33,"As a participant, I want to be shown all estimates at the same time after all estimators have given their estimate, so that I can be sure estimates are independent and not influenced by other estimates given in the same draw.",dev,False
+g13_042,g13-planningpoker,42,"As a participant, I want to have a small thumbnail photo displayed near where my cards are played, so that the game is more personal because I see who I'm estimating with.",test,False
+g13_044,g13-planningpoker,44,"As a developer, I want to have a list of definitions for commonly used terms, so that everyone working on the project can understand each other more easily.",test,False
+g13_048,g13-planningpoker,48,"As a user, I want to have the application respond quickly to my actions, so that I don't get bored.",test,False
+g13_051,g13-planningpoker,51,"As a user, I want to have nice error pages when something goes wrong, so that I can trust the system and its developers.",test,False
 g14_005,g14-datahub,5,"As a Publisher, I want to know what do next after signing up, so that that I can get going quickly.",test,False
 g14_006,g14-datahub,6,"As an Admin, I want to invite someone to join the platform, so that that they can start contributing or using data.",test,False
 g14_010,g14-datahub,10,"As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",test,False
@@ -128,37 +130,33 @@ g14_017,g14-datahub,17,"As a Publisher, I want to publish a data package in the 
 g14_026,g14-datahub,26,"As a Consumer, I want to see how much the data has been downloaded, so that that I can choose most popular in the case when there are several alternatives for my use case.",test,False
 g14_029,g14-datahub,29,"As a Consumer, I want to search data packages, so that that I can find the ones I want.",test,False
 g14_037,g14-datahub,37,"As a Data Analyst, I want to compare different versions of some datapackage locally, so that that I can see schema changes clearly and adjust my analytics code to the desired schema version.",dev,False
-g14_041,g14-datahub,41,"As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that that I don't accidentally overwrite stable tagged data which is relied on by consumers.",dev,True
+g14_041,g14-datahub,41,"As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that that I don't accidentally overwrite stable tagged data which is relied on by consumers.",test,False
 g14_046,g14-datahub,46,"As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before, so that that I can decide if I should update or not.",test,False
-g14_060,g14-datahub,60,"As an owner, I want to make a user an owner, so that they have full control.",dev,False
+g14_060,g14-datahub,60,"As an owner, I want to make a user an owner, so that they have full control.",dev,True
 g14_062,g14-datahub,62,"As an Admin, I want to set key configuration parameters for my site deployment, so that that I can change key information like the site title.",test,False
-g14_063,g14-datahub,63,"As an Admin, I want to see key metrics about usage such as users, API usage, downloads, so that that I know how things are going.",test,False
-g14_065,g14-datahub,65,"As a Publisher, I want to know if this site has a pricing plan and what the prices are, so that that I can work out what this will cost me in the future and have a sense that these guys are sustainable.",test,False
+g14_065,g14-datahub,65,"As a Publisher, I want to know if this site has a pricing plan and what the prices are, so that that I can work out what this will cost me in the future and have a sense that these guys are sustainable.",dev,True
 g16_001,g16-mis,1,"As a collection curator, I want to set a date after which data will expire and be deleted or hidden then deleted.",test,False
 g16_006,g16-mis,6,"As a faculty member, I want to add a date delimiter to a search string, so that I can limit a search to return only results from before, after, or between a given date or dates.",test,False
 g16_010,g16-mis,10,"As a repository manager, I want to elect to either replicate remotely or not and possibly to replicate beyond the primary remote site.",dev,False
 g16_013,g16-mis,13,"As a collection curator, I want to have my collection be encrypted with a key maintained on that server, a checksum made and stored of the encrypted file, and the encrypted file replicated to our remote storage site.",test,False
-g16_014,g16-mis,14,"As a collection curator, I want to lift an embargo for an object in a simple way.",dev,True
 g16_017,g16-mis,17,"As a collection curator, I want to create deposit forms specific to the collection.",test,False
 g16_031,g16-mis,31,"As a DigitalRecords Archivist, I want to have a method to add and remove individual people from deposit groups.",dev,False
 g16_034,g16-mis,34,"As a repoadmin, I want to expose repository contents via OAI-PMH.",test,False
-g16_036,g16-mis,36,"As a DigitalRecords Archivist, I want to view and download summary embargo metadata for all ETDs in the repository.",test,False
 g16_043,g16-mis,43,"As a repoadmin, I want to continue to provide access to the repository in the event that the server fails.",test,False
 g16_047,g16-mis,47,"As a repoadmin, I want to have Symplectic Elements to communicate bidirectionally with the repository.",test,False
 g16_057,g16-mis,57,"As a depositor, I want to easily find information about which data can be assigned a DOI, how to get one, and what metadata are required.",dev,False
 g16_065,g16-mis,65,"As a repository manager, I want to view available versions of an object and restore a version from the staff interface.",test,False
-g16_066,g16-mis,66,"As a collection curator, I want to view the permission on my objects all together.",dev,True
-g16_068,g16-mis,68,"As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.",test,False
+g16_066,g16-mis,66,"As a collection curator, I want to view the permission on my objects all together.",test,False
+g16_068,g16-mis,68,"As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.",dev,True
 g17_001,g17-cask,1,"As an app developer, I want to include the code of a dataset type in my app artifact and create a dataset of that type when deploying the app.",test,False
 g17_006,g17-cask,6,"As an app developer, I want to share a dataset type across multiple applications that include the dataset type's code in their artifacts.",test,False
 g17_010,g17-cask,10,"As an app developer, I want to share a dataset type that I had previously deployed as part of an app.",dev,False
 g17_013,g17-cask,13,"As a dataset developer, I want to have an archetype that helps me package my dataset type properly.",test,False
-g17_014,g17-cask,14,"As a dataset developer, I want to separate the interface from the implementation of a dataset type.",dev,True
+g17_014,g17-cask,14,"As a dataset developer, I want to separate the interface from the implementation of a dataset type.",test,False
 g17_017,g17-cask,17,"As a dataset developer, I want to assign explicit versions to the code of a dataset type.",test,False
 g17_026,g17-cask,26,"As a hydrator user, I want to create a pipeline that reads or writes a new dataset instance and I want to create that dataset instance as part of pipeline creation.",test,False
-g17_035,g17-cask,35,"As a dataset developer, I want to have the option of implementing an upgrade step for when a dataset instance is upgraded to a new version of the dataset type.",test,False
 g17_037,g17-cask,37,"As a dataset developer, I want to have the option of implementing a migration procedure that can be run after an upgrade of a dataset instance to a new version of it type.",dev,True
-g17_041,g17-cask,41,"As a user, I want to find out what properties are supported by the dataset type what values are allowed and what the defaults are when creating a dataset instance.",test,False
+g17_041,g17-cask,41,"As a user, I want to find out what properties are supported by the dataset type what values are allowed and what the defaults are when creating a dataset instance.",dev,True
 g17_045,g17-cask,45,"As a user, I want to configure time-to-live in a uniform way across all dataset types.",test,False
 g17_053,g17-cask,53,"As an app developer, I want to ensure that application creation fails if any of its datasets cannot be created.",dev,False
 g17_057,g17-cask,57,"As a user, I want to specify as part of dataset configuration whether it is explorable.",test,False
@@ -175,18 +173,16 @@ g18_046,g18-neurohub,46,"As a user, I want to search specifically for files rath
 g18_048,g18-neurohub,48,"As a user, I want to limit my search results to one or more log book sections from one or more log books.",test,False
 g18_063,g18-neurohub,63,"As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.",test,False
 g18_068,g18-neurohub,68,"As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",test,False
-g18_077,g18-neurohub,77,"As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.",test,False
-g18_086,g18-neurohub,86,"As a user, I want to be sure that existing metadata corresponding to the file is not lost when moving a file to a new location.",dev,True
+g18_086,g18-neurohub,86,"As a user, I want to be sure that existing metadata corresponding to the file is not lost when moving a file to a new location.",test,False
 g18_091,g18-neurohub,91,"As a researcher, I want to have the ability to store all the inputs for an experiment so that the provenance of the results can be verified.",test,False
-g18_098,g18-neurohub,98,"As a researcher, I want to have the ability to interact with a revision control system so that I can keep track of changes to files over time.",test,False
+g18_098,g18-neurohub,98,"As a researcher, I want to have the ability to interact with a revision control system so that I can keep track of changes to files over time.",dev,True
 g19_013,g19-alfred,13,"As an OlderPerson, I want to have an ALFRED device that only reacts to me.",test,False
 g19_027,g19-alfred,27,"As an OlderPerson, I want to have an ALFRED device that responds to the changing demand of the users by offering new Apps in the ALFREDO platform.",test,False
-g19_032,g19-alfred,32,"As an OlderPerson, I want to have an ALFRED device that provides me with information about existing apps that corresponds to my interests.",test,False
 g19_046,g19-alfred,46,"As an OlderPerson, I want to use ALFRED to control the TV and radio.",dev,False
 g19_065,g19-alfred,65,"As an OlderPerson, I want to use ALFRED to manage my agenda.",test,False
 g19_067,g19-alfred,67,"As an OlderPerson, I want to receive reminders on my appointments.",dev,True
-g19_068,g19-alfred,68,"As an OlderPerson, I want to receive a reminder from ALFRED on all the things I need to bring with me when I leave the house.",dev,True
-g19_070,g19-alfred,70,"As an OlderPerson, I want to use ALFRED to set up social groups of people with similar diseases.",test,False
+g19_068,g19-alfred,68,"As an OlderPerson, I want to receive a reminder from ALFRED on all the things I need to bring with me when I leave the house.",test,False
+g19_070,g19-alfred,70,"As an OlderPerson, I want to use ALFRED to set up social groups of people with similar diseases.",dev,True
 g19_085,g19-alfred,85,"As a MedicalCaregiver, I want to be sure that the user can decide who has access to her data.",test,False
 g19_086,g19-alfred,86,"As an OlderPerson, I want to have the wearables with integrated sensors to look good and not to be stigmatizing.",dev,False
 g19_105,g19-alfred,105,"As a MedicalCaregiver, I want to have ALFRED to remind people to exercise regularly.",test,False
@@ -196,19 +192,17 @@ g19_124,g19-alfred,124,"As a developer, I want to have the API to be well define
 g19_134,g19-alfred,134,"As a developer, I want to have an easy way to read data from health sensors the user is wearing.",test,False
 g21_001,g21-badcamp,1,"As a anonymoususer, I want to view a list of sponsors, so that I can thank all the awesome sponsors.",test,False
 g21_005,g21-badcamp,5,"As a trainer, I want to edit my training node myself, so that the training coordinators don't have to and links to slides.",test,False
-g21_006,g21-badcamp,6,"As a trainee, I want to limit to one registration per day per authenticated user, so that we don't have duplicate spaces.",dev,True
 g21_010,g21-badcamp,10,"As a trainingcoordinator, I want to tie in a cancellation deadline to whatever registration / cancellation workflow exists, so that so we don't loose money or spots.",dev,False
 g21_011,g21-badcamp,11,"As a trainee, I want to add to ""my schedule"" if there is a schedule feature on the site, so that they can schedule their event experience.",test,False
 g21_013,g21-badcamp,13,"As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, so that the training coordinator doesn't have to do all the work to get login info for environment setup.",dev,False
-g21_019,g21-badcamp,19,"As a anonymoususer, I want to find out where the coding lounge is and what time it is open, so that I can code with my friends.",dev,True
+g21_019,g21-badcamp,19,"As a anonymoususer, I want to find out where the coding lounge is and what time it is open, so that I can code with my friends.",test,False
 g21_023,g21-badcamp,23,"As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, so that I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.",dev,False
 g21_032,g21-badcamp,32,"As a authenticateduser, I want to update my user profile, so that I can connect with other Drupalists at BADCamp.",test,False
 g21_034,g21-badcamp,34,"As a administrator, I want to tag my blog posts for consumption by Drupal Planet, so that they will be listed on the Drupal Planet blog.",test,False
-g21_045,g21-badcamp,45,"As a anonymoususer, I want to see how many seats are left for the summit, so that I can make sure to register in-time to reserve my spot.",test,False
+g21_045,g21-badcamp,45,"As a anonymoususer, I want to see how many seats are left for the summit, so that I can make sure to register in-time to reserve my spot.",dev,True
 g21_048,g21-badcamp,48,"As a anonymoususer, I want to learn about sponsorship levels, so that I can determine the right level of sponsorship for my organization.",test,False
 g21_054,g21-badcamp,54,"As a administrator, I want to assign a room to a time slot and a location, so that I can populate the schedule .",test,False
 g21_060,g21-badcamp,60,"As a anonymoususer, I want to receive a notification when I submit a session, so that know that my session went through ok.",test,False
-g21_069,g21-badcamp,69,"As a anonymoususer, I want to find session information, so that I can go to a session.",test,False
 g22_001,g22-rdadmp,1,"As a PI, I want to properly record all metadata, so that I can ensure proper running of the project in case of staff changes.",test,False
 g22_005,g22-rdadmp,5,"As a repository owner, I want to be able to check the planned provenance of the data that will be submitted at the end of a project, so that I can calculate necessary submission fees and check whether it belongs to our target group.",test,False
 g22_011,g22-rdadmp,11,"As a data manager, I want to know what the content of the data is, so that I can decide to which collection or repository the data fits.",test,False
@@ -219,48 +213,58 @@ g22_029,g22-rdadmp,29,"As a metadata manager, I want to have a short description
 g22_031,g22-rdadmp,31,"As a data manager, I want to know the time plan for collecting data, so that I can plan the data management.",dev,False
 g22_032,g22-rdadmp,32,"As a data librarian, I want to import administrative information regarding a project into DMP, so that I can prepopulate the DMP.",test,False
 g22_034,g22-rdadmp,34,"As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.",dev,False
-g22_036,g22-rdadmp,36,"As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.",dev,True
+g22_036,g22-rdadmp,36,"As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.",test,False
 g22_050,g22-rdadmp,50,"As a PI, I want to plan what kind of data I want to store, so that I can ensure it will be possible to store it.",test,False
 g22_054,g22-rdadmp,54,"As a researcher, I want to know how long it will take to archive, so that I can plan further steps.",test,False
-g22_070,g22-rdadmp,70,"As a data manager, I want to know the security requirements of the data, so that I can check whether the data can be kept secure.",test,False
-g22_071,g22-rdadmp,71,"As a institutional data steward, I want to be able to extract the data sets that are submitted to external repositories, so that I can add them to an institutional data catalogue.",test,False
+g22_070,g22-rdadmp,70,"As a data manager, I want to know the security requirements of the data, so that I can check whether the data can be kept secure.",dev,True
 g23_001,g23-archivesspace,1,"As a researcher, I want to be able to view a finding aid for a particular collection/Resource.",dev,False
 g23_004,g23-archivesspace,4,"As an Archivist, I want to import EAD files that were exported by Archon.",dev,False
 g23_006,g23-archivesspace,6,"As a User , I want to authenticate using LDAP.",test,False
-g23_010,g23-archivesspace,10,"As an Archivist, I want to be able to understand that an error occurred during import and why it might have occurred.",test,False
-g23_014,g23-archivesspace,14,"As an Authenticated User, I want to get access to links to contextual help.",dev,False
+g23_014,g23-archivesspace,14,"As an Authenticated User, I want to get access to links to contextual help.",dev,True
 g23_015,g23-archivesspace,15,"As an Archivist, I want to see Dates and Extents displayed in both the read and edit views for Accessions and/or Resources before the list of Subjects.",test,False
 g23_021,g23-archivesspace,21,"As an Application Administrator, I want to assign Users to an Advanced Data Entry and ensure that the appropriate permissions are enforced.",test,False
 g23_028,g23-archivesspace,28,"As a developer, I want to use a configuration that is not prepackaged within a built version of application.",test,False
-g23_032,g23-archivesspace,32,"As an archivist, I want to create and edit a Collection Management subrecord.",dev,True
+g23_032,g23-archivesspace,32,"As an archivist, I want to create and edit a Collection Management subrecord.",test,False
 g23_035,g23-archivesspace,35,"As an Archivist, I would like to indicate an Agent is either the creator or source or subject of an Accession or Resource or Resource Component.",test,False
-g23_036,g23-archivesspace,36,"As an Archivist, I want to export a description as EAD.",test,False
+g23_036,g23-archivesspace,36,"As an Archivist, I want to export a description as EAD.",dev,True
 g23_038,g23-archivesspace,38,"As an Archivist, I want to manage Digital Objects.",test,False
 g23_046,g23-archivesspace,46,"As a Basic Data Entry user , I want to create and update basic archival description information.",test,False
-g23_052,g23-archivesspace,52,"As an Archivist, I want to create and edit a Resource record.",dev,True
+g23_052,g23-archivesspace,52,"As an Archivist, I want to create and edit a Resource record.",test,False
 g23_056,g23-archivesspace,56,"As an Archivist, I want to associate an Instance with a Container.",test,False
-g25_001,g25-duraspace,1,"As a repository manager, I want to know all the collections and objects in the DAMS for which I have custodial responsibility.",dev,False
+g24_004,g24-unibath,4,"As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar.",test,False
+g24_006,g24-unibath,6,"As a depositor, I want to place data under an embargo, so that my right of first use is protected, and I can fulfil my confidentiality responsibilities.",dev,True
+g24_007,g24-unibath,7,"As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.",test,False
+g24_009,g24-unibath,9,"As a depositor, I want to deposit arbitrarily large files, so that I am not limited in what files I can and cannot deposit.",dev,False
+g24_013,g24-unibath,13,"As a depositor, I want to link to data stored in external repositories, so that I can store my data in an appropriate repository but still register it with the University and I don't have to deposit my data in multiple places.",test,False
+g24_014,g24-unibath,14,"As a depositor, I want to specify a disposal policy for my data, so that I do not accidentally breach laws or collaboration agreements.",test,False
+g24_018,g24-unibath,18,"As a depositor, I want to attach subject specific discoverability metadata to records, so that researchers in my discipline can find my data more easily.",test,False
+g24_020,g24-unibath,20,"As a depositor, I want to manage and share 'live' research data, so that whole project workflow is linked together.",dev,False
+g24_027,g24-unibath,27,"As a data reuser, I want to view a DOI for a dataset, so that I can get back to the data in future and I can import the dataset into my referencemanagement software automatically.",dev,True
+g24_033,g24-unibath,33,"AS an externalcoordinator, I want to access data from Bath collaborators off campus, so that I can collaborate effectively.",dev,False
+g24_042,g24-unibath,42,"As a Research Information manager, I want to include records for externally held data complete, so that the university's record of data holdings is complete.",test,False
+g24_044,g24-unibath,44,"As a Research Information manager, I want to segment the view and download statistics by country and sector so that impact of datasets outside academia can be demonstrated.",test,False
+g24_048,g24-unibath,48,"As an UnivITservice, I want to store archived data directly on the HCP object store, so that features can be made.",test,False
+g24_051,g24-unibath,51,"As an academicpublisher, I want to make persistent web links between my articles and underlying datasets, so that my journals can be seen to be filled with robust, high quality research.",test,False
+g25_001,g25-duraspace,1,"As a repository manager, I want to know all the collections and objects in the DAMS for which I have custodial responsibility.",dev,True
 g25_011,g25-duraspace,11,"As a repository manager, I want to indicate names related to the collection either as creator, source, or subject.",test,False
 g25_019,g25-duraspace,19,"As a repository manager, I want to describe an object, including its title, date(s), language(s), and other aspects.",test,False
 g25_023,g25-duraspace,23,"As a repository manager, I want to indicate any statutes pertinent to an object.",test,False
 g25_031,g25-duraspace,31,"As a user, I want to know what collection(s) an object belongs to.",dev,False
-g25_034,g25-duraspace,34,"As a user, I want to know the rights status of an object.",dev,True
-g25_040,g25-duraspace,40,"As a repository manager, I want to indicate any name that is pertinent to the component.",dev,True
+g25_034,g25-duraspace,34,"As a user, I want to know the rights status of an object.",test,False
+g25_040,g25-duraspace,40,"As a repository manager, I want to indicate any name that is pertinent to the component.",test,False
 g25_045,g25-duraspace,45,"As a repository manager, I want to indicate if other rights pertain to the component, apart from the object as a whole.",test,False
 g25_046,g25-duraspace,46,"As a repository manager, I want to know all events occurring to a component over its life cycle.",test,False
 g25_054,g25-duraspace,54,"As a DAMS manager, I want to indicate the source-capture information for a file where it is useful to do so.",test,False
 g25_071,g25-duraspace,71,"As a user, I want to search by for collections and objects by name.",test,False
-g25_074,g25-duraspace,74,"As a repository manager, I want to indicate all subjects that are pertinent to a collection, object, or object component.",test,False
+g25_074,g25-duraspace,74,"As a repository manager, I want to indicate all subjects that are pertinent to a collection, object, or object component.",dev,True
 g25_081,g25-duraspace,81,"As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.",test,False
 g25_084,g25-duraspace,84,"As a DAMS manager, I want to know when copyright for an object or object component is likely to expire per jurisdictional copyright statute.",dev,False
-g25_091,g25-duraspace,91,"As a DAMS manager, I want to know if an object or object component is subject to a library policy that restricts access in any way.",test,False
 g26_001,g26-racdam,1,"As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.",dev,False
-g26_011,g26-racdam,11,"As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",test,False
+g26_011,g26-racdam,11,"As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",dev,True
 g26_019,g26-racdam,19,"As an archivist, I want to automatically generate technical metadata, so that I know the file size.",test,False
 g26_023,g26-racdam,23,"As an archivist, I want to upload scans of images created while answering research requests, so that they can be used again for other research requests.",test,False
 g26_031,g26-racdam,31,"As a donor representative, I want to supply incremental accruals to new and existing collections, so that material can be transferred on an ongoing basis.",dev,False
-g26_034,g26-racdam,34,"As a researcher, I want to generate structured citation data, so that so I can cite a file in a publication.",dev,True
-g26_040,g26-racdam,40,"As a researcher, I want to download reports, so that I can use them in immediate and future in talks and articles.",dev,True
+g26_040,g26-racdam,40,"As a researcher, I want to download reports, so that I can use them in immediate and future in talks and articles.",test,False
 g26_045,g26-racdam,45,"As an archivist, I want to make information about rights available to researchers and donors, so that they know what they can do with images.",test,False
 g26_046,g26-racdam,46,"As an archivist, I want to ensure that emails sent about specific objects contain accurate citation information, so that I can confirm which object is being referred to.",test,False
 g26_054,g26-racdam,54,"As a donor representative, I want to access the descriptive information about the images scanned for my institutions needs.",test,False
@@ -268,11 +272,9 @@ g26_071,g26-racdam,71,"As a researcher, I want to have accurate cross-collection
 g26_074,g26-racdam,74,"As a researcher, I want to ask a question about a specific file, so that I can find out more information.",test,False
 g26_081,g26-racdam,81,"As a donor representative, I want to see thumbnails of images, so that I can select which one I want.",test,False
 g26_084,g26-racdam,84,"As an archivist, I want to search images by people represented in them.",dev,False
-g26_091,g26-racdam,91,"As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.",test,False
 g27_005,g27-culrepo,5,"As a patron, I want to select/deselect reports/datasets to be emailed, possibly many at one time, when new versions are available.",test,False
 g27_011,g27-culrepo,11,"As a faculty member, I want to easily collect my publications -- both those within the repository and without -- into a single online access point, so that I can raise the profile of my work.",test,False
 g27_012,g27-culrepo,12,"As a crossdeptprojteammember, I want to have a better place to collect and share project materials, with a range of organization/tagging and access options, including private (internal group use only), University and public.",dev,False
-g27_019,g27-culrepo,19,"As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.",test,False
 g27_037,g27-culrepo,37,"As a researcher, I want to receive updates when new works are published in a given collection or by a given author, so that I can discover more of their work.",dev,False
 g27_041,g27-culrepo,41,"As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.",test,False
 g27_046,g27-culrepo,46,"As a library staff member, I want to make digital items held in trusted external system searchable within our system, so that I can provide seamless access to disparate collections.",dev,True
@@ -281,13 +283,12 @@ g27_067,g27-culrepo,67,"As a repository support team member, I want to export a 
 g27_070,g27-culrepo,70,"As a library staff member, I want to have customizable metadata fields, so that each project is described in the most accurate way possible.",test,False
 g27_071,g27-culrepo,71,"As a faculty member, I want to associate files with my scholarly works such that someone accessing the latter also receives access to the former, so that I can deliver the fullest picture of my research.",test,False
 g27_081,g27-culrepo,81,"As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.",dev,False
-g27_084,g27-culrepo,84,"As a Cornell faculty member, I want to share on the repository files that are larger than 1GB in a way that still allows users to download them if I want to use them, so that I can meet funder requirements.",test,False
+g27_084,g27-culrepo,84,"As a Cornell faculty member, I want to share on the repository files that are larger than 1GB in a way that still allows users to download them if I want to use them, so that I can meet funder requirements.",dev,True
 g27_099,g27-culrepo,99,"As an asset manager, I want to be assured that threats to copies in one repository are not automatically incurred by the redundant copies.",test,False
-g27_113,g27-culrepo,113,"As a patron, I want to email system provider to report issues and ask questions.",dev,True
+g27_113,g27-culrepo,113,"As a patron, I want to email system provider to report issues and ask questions.",test,False
 g28_001,g28-zooniverse,1,"As a user, I want to search and discover music using content identification or fingerprinting.",dev,False
-g28_004,g28-zooniverse,4,"As a user, I want to search and discover music or ringback tones similar to a given music video based on content similarity.",dev,True
 g28_006,g28-zooniverse,6,"As a user, I want to upload tagged videos and have tags available for all further processing steps.",test,False
-g28_013,g28-zooniverse,13,"As a user, I want to identify products in videos, and receive related information about them.",test,False
+g28_013,g28-zooniverse,13,"As a user, I want to identify products in videos, and receive related information about them.",dev,True
 g28_014,g28-zooniverse,14,"As a user, I want to identify broadcaster logos in videos, and receive related information about them.",test,False
 g28_032,g28-zooniverse,32,"As a Zooniverse admin, I want to perform automatic image series detection for the case of timestamping malfunction in Snapshot Serengeti images.",test,False
 g28_034,g28-zooniverse,34,"As a Zooniverse admin, I want to perform automatic animal attribute preclassification in Snapshot Serengeti.",test,False
@@ -295,7 +296,6 @@ g28_037,g28-zooniverse,37,"As a Zooniverse admin, I want to automatically detect
 g28_046,g28-zooniverse,46,"As a Zooniverse admin, I want to remove background noise and distracting sounds from the audio files.",test,False
 g28_047,g28-zooniverse,47,"As a Zooniverse admin, I want to group whale calls that are similar.",test,False
 g28_049,g28-zooniverse,49,"As a Zooniverse admin, I want to know when I should interrupt a volunteer.",test,False
-g28_051,g28-zooniverse,51,"As a Zooniverse admin, I want to know when I should educate a volunteer.",dev,False
-g28_053,g28-zooniverse,53,"As a Zooniverse admin,I want to know which piece of education I should give to a volunteer.",test,False
-g28_055,g28-zooniverse,55,"As a Zooniverse admin, I want to know when Zoonibot should comment on a subject.",dev,True
+g28_051,g28-zooniverse,51,"As a Zooniverse admin, I want to know when I should educate a volunteer.",dev,True
+g28_055,g28-zooniverse,55,"As a Zooniverse admin, I want to know when Zoonibot should comment on a subject.",test,False
 g28_058,g28-zooniverse,58,"As a Zooniverse admin, I want to group subjects by similarity.",dev,False

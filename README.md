@@ -22,7 +22,7 @@ Put the dataset .txt files in `data/raw/` (named like `g02-federalspending.txt`)
 
 ## Design decisions
 - Random seeds are fixed (sampling 42, row shuffle 7), so every run gives the same sample.
-- 15 stories per project: 5 development + 10 test. The 40 pilot stories (2 per project) come only from the development set.
+- The 300-story sample is drawn from all 22 project sets, roughly 13–14 stories per project (8 projects have 13, 14 have 14). Split: 100 development (4–5 per project) + 200 test (9–10 per project). The 40 pilot stories (1–2 per project, 18 projects with 2 and 4 with 1) come only from the development set.
 - **Never use test-set stories when writing rules or prompts.** They are labelled for ground truth only.
 - Cleaning joins stories split over two lines, drops non-story lines and removes exact duplicates. Every change is in `cleaning_log.csv`.
 - Re-running step 1 after adding new files changes the sample. Only do this **before** labelling starts.
