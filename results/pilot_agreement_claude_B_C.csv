@@ -1,0 +1,8 @@
+# NOTE: column "A" (kappa_AB, kappa_AC, yes_A, ...) is the Claude reference labelling (labelling/reference/pilot_claude_reference.xlsx; A's workbook was an identical copy), NOT a human annotator. B and C are the human annotators. Read with pandas.read_csv(path, comment="#").
+dimension,kappa_AB,pct_AB,kappa_AC,pct_AC,kappa_BC,pct_BC,fleiss_ABC,yes_A,yes_B,yes_C,unanimous,split_2v1
+D1,,100.0,,100.0,,100.0,,0,0,0,40,0
+D2,0.948,97.5,0.899,95.0,0.848,92.5,0.898,17,16,19,37,3
+D3,0.383,87.5,1.0,100.0,0.383,87.5,0.537,3,6,3,35,5
+D4,0.157,47.5,0.3,65.0,0.45,72.5,0.223,6,27,20,17,23
+D5,0.014,30.0,0.536,82.5,0.132,47.5,0.045,6,32,13,12,28
+D6,0.094,70.0,0.677,87.5,0.12,72.5,0.313,11,5,10,26,14

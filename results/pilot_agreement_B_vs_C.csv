@@ -1,0 +1,7 @@
+dimension,n,kappa,interpretation,percent_agreement,yes_B,yes_C,meets_target_0.6
+D1,40,,undefined (one annotator used only one value),100.0,0,0,False
+D2,40,0.848,almost perfect,92.5,16,19,True
+D3,40,0.383,fair,87.5,6,3,False
+D4,40,0.45,moderate,72.5,27,20,False
+D5,40,0.132,slight,47.5,32,13,False
+D6,40,0.12,slight,72.5,5,10,False
