@@ -1,0 +1,208 @@
+[
+  {
+    "story_id": "MOCK-001",
+    "text": "As a user, I want the login page to be fast and user-friendly.",
+    "findings": [
+      {
+        "defect": "D4",
+        "span_text": "fast",
+        "span_start": 39,
+        "span_end": 43,
+        "source": "both",
+        "rule_id": "R-AMB-01",
+        "llm_agreement": 1.0,
+        "confidence": "High",
+        "label": "confirmed",
+        "evidence": "Matched vague adjective \"fast\" (rule R-AMB-01: subjective quality word without a measurable threshold).",
+        "justification": "\"Fast\" has no unit or target, so two developers could build very different pages and both claim the story is done."
+      },
+      {
+        "defect": "D4",
+        "span_text": "user-friendly",
+        "span_start": 48,
+        "span_end": 61,
+        "source": "both",
+        "rule_id": "R-AMB-01",
+        "llm_agreement": 0.8,
+        "confidence": "Medium",
+        "label": "confirmed",
+        "evidence": "Matched vague adjective \"user-friendly\" (rule R-AMB-01: subjective quality word without a measurable threshold).",
+        "justification": "\"User-friendly\" is subjective; it is unclear which user group or which usability criteria apply."
+      },
+      {
+        "defect": "D5",
+        "span_text": "fast and user-friendly",
+        "span_start": 39,
+        "span_end": 61,
+        "source": "llm",
+        "llm_agreement": 0.6,
+        "confidence": "Medium",
+        "label": "AI only",
+        "evidence": "No rule matched this span. Flagged by the language model in 3 of 5 runs.",
+        "justification": "Neither quality can be tested as written, because there is no pass/fail condition for a tester to check."
+      },
+      {
+        "defect": "D2",
+        "span_text": "I want the login page to be fast and user-friendly",
+        "span_start": 11,
+        "span_end": 61,
+        "source": "rule",
+        "rule_id": "R-BV-01",
+        "confidence": "Medium",
+        "label": "rule only",
+        "evidence": "No \"so that ...\" benefit clause found (rule R-BV-01: story ends without a stated purpose)."
+      },
+      {
+        "defect": "D6",
+        "span_text": "login page",
+        "span_start": 22,
+        "span_end": 32,
+        "source": "llm",
+        "llm_agreement": 0.2,
+        "confidence": "Low",
+        "label": "possible issue",
+        "evidence": "No rule matched this span. Flagged by the language model in 1 of 5 runs.",
+        "justification": "It might be unclear which login method (password, SSO) and which error cases the page must cover."
+      }
+    ],
+    "improved": {
+      "text": "As a registered customer, I want the login page to load in [under 2 seconds] on [a typical broadband connection] so that I can start my task without waiting.",
+      "acceptance_criteria_gherkin": "Feature: Login page performance\n  Scenario: Login page loads quickly\n    Given the login page is requested over [a typical broadband connection]\n    When the user opens the login page\n    Then the form is fully displayed within [2 seconds]\n    And the username field has keyboard focus\n\n  Scenario: Login form is operable by keyboard\n    Given the login page is displayed\n    When the user presses Tab\n    Then the focus moves to the next form control",
+      "assumptions": [
+        "\"Fast\" is interpreted as a 95th-percentile load time of under 2 seconds.",
+        "A typical broadband connection means at least 10 Mbit/s.",
+        "\"User-friendly\" is narrowed to keyboard operability; further usability criteria need a separate story."
+      ]
+    }
+  },
+  {
+    "story_id": "MOCK-002",
+    "text": "As an admin, I want to export reports and manage users and send notifications so that the team stays informed.",
+    "findings": [
+      {
+        "defect": "D3",
+        "span_text": "export reports and manage users and send notifications",
+        "span_start": 23,
+        "span_end": 77,
+        "source": "both",
+        "rule_id": "R-ATOM-01",
+        "llm_agreement": 1.0,
+        "confidence": "High",
+        "label": "confirmed",
+        "evidence": "Matched 2 coordinating conjunctions \"and\" joining 3 verb phrases (rule R-ATOM-01: multiple actions in one story).",
+        "justification": "Exporting, user management and notifications are three separate capabilities and should be split into three stories."
+      },
+      {
+        "defect": "D5",
+        "span_text": "the team stays informed",
+        "span_start": 86,
+        "span_end": 109,
+        "source": "llm",
+        "llm_agreement": 0.6,
+        "confidence": "Medium",
+        "label": "AI only",
+        "evidence": "No rule matched this span. Flagged by the language model in 3 of 5 runs.",
+        "justification": "There is no observable outcome that shows the team is informed, so the benefit cannot be verified."
+      },
+      {
+        "defect": "D6",
+        "span_text": "reports",
+        "span_start": 30,
+        "span_end": 37,
+        "source": "llm",
+        "llm_agreement": 0.2,
+        "confidence": "Low",
+        "label": "possible issue",
+        "evidence": "No rule matched this span. Flagged by the language model in 1 of 5 runs.",
+        "justification": "The report types and export format are not mentioned."
+      }
+    ],
+    "improved": {
+      "text": "As an admin, I want to export the monthly usage report as [a CSV file] so that the team can review usage figures.",
+      "acceptance_criteria_gherkin": "Feature: Export monthly usage report\n  Scenario: Admin exports the report\n    Given an admin is signed in\n    And usage data exists for [the previous calendar month]\n    When the admin selects \"Export CSV\"\n    Then a CSV file with one row per user is downloaded",
+      "assumptions": [
+        "Only the monthly usage report is in scope; user management and notifications become separate stories.",
+        "CSV is the only required export format."
+      ]
+    }
+  },
+  {
+    "story_id": "MOCK-003",
+    "text": "I want to see my order history.",
+    "findings": [
+      {
+        "defect": "D1",
+        "span_text": "I want to see my order history",
+        "span_start": 0,
+        "span_end": 30,
+        "source": "rule",
+        "rule_id": "R-WF-01",
+        "confidence": "High",
+        "label": "rule only",
+        "evidence": "No role clause \"As a <role>,\" at the start of the story (rule R-WF-01: story does not begin with the standard template)."
+      },
+      {
+        "defect": "D2",
+        "span_text": "I want to see my order history",
+        "span_start": 0,
+        "span_end": 30,
+        "source": "rule",
+        "rule_id": "R-BV-01",
+        "confidence": "Medium",
+        "label": "rule only",
+        "evidence": "No \"so that ...\" benefit clause found (rule R-BV-01: story ends without a stated purpose)."
+      },
+      {
+        "defect": "D6",
+        "span_text": "my order history",
+        "span_start": 14,
+        "span_end": 30,
+        "source": "llm",
+        "llm_agreement": 0.4,
+        "confidence": "Low",
+        "label": "possible issue",
+        "evidence": "No rule matched this span. Flagged by the language model in 2 of 5 runs.",
+        "justification": "It is not stated how far back the history goes or which order details are shown."
+      }
+    ],
+    "improved": {
+      "text": "As a returning customer, I want to see a list of my orders from the last [12 months] so that I can check what I have already bought.",
+      "acceptance_criteria_gherkin": "Feature: Order history\n  Scenario: Customer views past orders\n    Given a signed-in customer with orders in the last [12 months]\n    When the customer opens \"My orders\"\n    Then the orders are listed newest first\n    And each entry shows the order date and [the order total]",
+      "assumptions": [
+        "Order history covers the last 12 months only.",
+        "Each entry shows the order date and total; item-level detail is out of scope."
+      ]
+    }
+  },
+  {
+    "story_id": "MOCK-004",
+    "text": "As a librarian, I want to receive an email when a reserved book is returned so that I can collect it promptly.",
+    "findings": [
+      {
+        "defect": "D4",
+        "span_text": "promptly",
+        "span_start": 101,
+        "span_end": 109,
+        "source": "both",
+        "rule_id": "R-AMB-02",
+        "llm_agreement": 0.6,
+        "confidence": "Medium",
+        "label": "confirmed",
+        "evidence": "Matched vague adverb \"promptly\" (rule R-AMB-02: time expression without a measurable limit).",
+        "justification": "\"Promptly\" does not say how soon the email must arrive or how long the book is held."
+      },
+      {
+        "defect": "D6",
+        "span_text": "an email",
+        "span_start": 34,
+        "span_end": 42,
+        "source": "llm",
+        "llm_agreement": 0.2,
+        "confidence": "Low",
+        "label": "possible issue",
+        "evidence": "No rule matched this span. Flagged by the language model in 1 of 5 runs.",
+        "justification": "The email content and recipient address source are not described."
+      }
+    ]
+  }
+]

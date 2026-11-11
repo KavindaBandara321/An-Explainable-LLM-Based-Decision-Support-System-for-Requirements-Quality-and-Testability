@@ -5,6 +5,8 @@ __pycache__/
 # secrets / API keys
 .env
 .env.*
+!.env.example
+.pytest_cache/
 *.key
 *api_key*
 *apikey*

@@ -1,0 +1,15 @@
+{
+  "description": "Sample study config with invented participant codes. A real config lists 10 story_ids per participant; the UI uses whatever list it is given and never generates or shuffles the order. P07 uses all four mock stories; P99 is a short two-story run used by the end-to-end tests.",
+  "participants": {
+    "P07": [
+      { "story_id": "MOCK-001", "condition": "findings_only" },
+      { "story_id": "MOCK-002", "condition": "findings_plus_explanation" },
+      { "story_id": "MOCK-003", "condition": "findings_plus_explanation" },
+      { "story_id": "MOCK-004", "condition": "findings_only" }
+    ],
+    "P99": [
+      { "story_id": "MOCK-001", "condition": "findings_only" },
+      { "story_id": "MOCK-002", "condition": "findings_plus_explanation" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<h1>Improvement</h1>
+
+@if (store.error(); as err) {
+  <div class="alert error" role="alert">{{ err }}</div>
+}
+
+@if (store.stories().length > 0) {
+  <div class="panel sel">
+    <div class="field">
+      <label for="story-select">Story</label>
+      <select id="story-select" [value]="story()?.story_id" (change)="onSelect($event)">
+        @for (s of store.stories(); track s.story_id) {
+          <option [value]="s.story_id" [selected]="s.story_id === story()?.story_id">{{ s.story_id }}{{ s.improved ? '' : ' (no improved version)' }}</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  @if (story(); as s) {
+    @if (improved(); as imp) {
+      <div class="cols">
+        <section class="panel" aria-labelledby="orig-h">
+          <h2 id="orig-h">Original</h2>
+          <p class="story" data-testid="original-text">{{ s.text }}</p>
+        </section>
+        <section class="panel" aria-labelledby="impr-h">
+          <h2 id="impr-h">Improved</h2>
+          <p class="story" data-testid="improved-text">@for (p of improvedParts(); track $index) {@if (p.assumption) {<mark class="assumption" data-testid="assumption">{{ p.text }}</mark>} @else {<span>{{ p.text }}</span>}}</p>
+        </section>
+      </div>
+
+      <section class="panel" aria-labelledby="gh-h" style="margin-top: 1rem">
+        <h2 id="gh-h">Acceptance criteria (Gherkin)</h2>
+        <pre class="mono-block" tabindex="0" aria-label="Gherkin acceptance criteria" data-testid="gherkin">@for (line of gherkin(); track $index) {<span class="line">{{ line.indent }}@if (line.keyword) {<span class="kw">{{ line.keyword }}</span>}@for (p of line.parts; track $index) {@if (p.assumption) {<mark class="assumption" data-testid="assumption">{{ p.text }}</mark>} @else {<span>{{ p.text }}</span>}}</span>}</pre>
+      </section>
+
+      <section class="panel" aria-labelledby="as-h">
+        <h2 id="as-h">Assumptions ({{ imp.assumptions.length }})</h2>
+        <p class="muted">Every <mark class="assumption">[bracketed]</mark> text above is an assumption made by the improvement step. Please confirm or correct each one.</p>
+        @if (imp.assumptions.length > 0) {
+          <ol data-testid="assumption-list">
+            @for (a of imp.assumptions; track $index) {
+              <li>{{ a }}</li>
+            }
+          </ol>
+        } @else {
+          <p class="muted">No assumptions listed.</p>
+        }
+      </section>
+    } @else {
+      <section class="panel">
+        <h2>Original</h2>
+        <p class="story">{{ s.text }}</p>
+        <p class="alert info" role="status">No improved version is available for this story.</p>
+      </section>
+    }
+  }
+}

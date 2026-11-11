@@ -1,0 +1,99 @@
+<h1 #heading tabindex="-1">User study</h1>
+
+@switch (stage()) {
+  @case ('start') {
+    <section class="panel narrow" aria-labelledby="start-h">
+      <h2 id="start-h">Start</h2>
+      <p>You will review user stories one at a time and fix each one. Your answers are saved only in this browser tab and are never sent anywhere. At the end you download them as files.</p>
+
+      @if (configError(); as err) {
+        <div class="alert error" role="alert">{{ err }}</div>
+      }
+      @if (store.error(); as err) {
+        <div class="alert error" role="alert">{{ err }}</div>
+      }
+
+      <div class="field">
+        <label for="code">Participant code (for example P07, no names)</label>
+        <input id="code" type="text" autocomplete="off" maxlength="4" [value]="code()" (input)="onCode($event)" aria-describedby="start-err" />
+      </div>
+
+      <div class="check">
+        <input id="consent" type="checkbox" [checked]="consent()" (change)="consent.set($any($event.target).checked)" />
+        <label for="consent">I have read the information sheet and agree to take part. I understand that my answers are recorded under my participant code only.</label>
+      </div>
+
+      <div id="start-err" role="alert">
+        @if (startError(); as err) {
+          <div class="alert error">{{ err }}</div>
+        }
+      </div>
+
+      <button type="button" class="btn" (click)="start()" data-testid="start">Start study</button>
+
+      <details style="margin-top: 1rem">
+        <summary>Researcher: study config</summary>
+        <p class="muted">Loaded: <span data-testid="config-source">{{ configSource() || 'none' }}</span> ({{ participantCount() }} participants)</p>
+        <div class="field">
+          <label for="config-file">Load a study config JSON</label>
+          <input id="config-file" type="file" accept="application/json,.json" (change)="onConfigFile($event)" />
+        </div>
+      </details>
+    </section>
+  }
+
+  @case ('running') {
+    @if (item(); as it) {
+      <p role="status" aria-live="polite" data-testid="progress">Story {{ index() + 1 }} of {{ items().length }} · participant {{ participant() }}</p>
+      <div [attr.data-condition]="it.condition" data-testid="study-story">
+        @if (story(); as s) {
+          <section class="panel" aria-label="Story">
+            <h2>Story to review</h2>
+            <app-story-highlight [text]="s.text" [findings]="s.findings" />
+            <app-defect-legend />
+          </section>
+          <section class="panel" aria-label="Findings">
+            <app-findings-table [findings]="s.findings" [explain]="it.condition === 'findings_plus_explanation'" />
+          </section>
+        }
+      </div>
+
+      <section class="panel" aria-label="Your answer">
+        <div class="field">
+          <label for="fixed">Your fixed version of the story</label>
+          <textarea id="fixed" [value]="fixedText()" (input)="onFixed($event)"></textarea>
+        </div>
+
+        @for (q of questions; track q.key) {
+          <fieldset class="likert">
+            <legend>{{ q.text }} <span class="muted">(1 = strongly disagree, 5 = strongly agree)</span></legend>
+            <div class="scale">
+              @for (n of scale; track n) {
+                <label><input type="radio" [name]="q.key" [value]="n" [checked]="ratings()[q.key] === n" (change)="setRating(q.key, n)" /> {{ n }}</label>
+              }
+            </div>
+          </fieldset>
+        }
+
+        <div role="alert">
+          @if (submitError(); as err) {
+            <div class="alert error">{{ err }}</div>
+          }
+        </div>
+        <button type="button" class="btn" (click)="next()" data-testid="next">{{ isLast() ? 'Finish' : 'Next story' }}</button>
+      </section>
+    }
+  }
+
+  @case ('done') {
+    <section class="panel narrow" aria-labelledby="done-h" data-testid="done">
+      <h2 id="done-h">Thank you</h2>
+      <p>You completed {{ records().length }} stories. Download your results below and send the files to the researcher. Nothing has been sent to any server.</p>
+      <div class="actions">
+        <button type="button" class="btn" (click)="downloadJson()" data-testid="download-json">Download JSON</button>
+        <button type="button" class="btn" (click)="downloadCsv()" data-testid="download-csv">Download CSV</button>
+        <button type="button" class="btn secondary" (click)="restart()">Start a new session</button>
+      </div>
+    </section>
+  }
+}

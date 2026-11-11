@@ -1,0 +1,79 @@
+<ng-template #tableTpl let-rows let-caption="caption">
+  <table class="data">
+    <caption>{{ caption }}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Defect</th>
+        <th scope="col">Span</th>
+        <th scope="col">Confidence</th>
+        <th scope="col">Label</th>
+        @if (explain()) {
+          <th scope="col">Source</th>
+          <th scope="col"><span class="visually-hidden">Details</span></th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (r of rows; track r.id) {
+        <tr data-testid="finding-row">
+          <td><span class="defect-chip" [class]="r.f.defect.toLowerCase()">{{ r.f.defect }}</span> {{ defectName(r.f) }}</td>
+          <td>
+            “{{ r.f.span_text }}”
+            <span class="offsets muted">[{{ r.f.span_start }}–{{ r.f.span_end }}]</span>
+          </td>
+          <td><span class="badge" [class]="conf(r.f.confidence)"><span aria-hidden="true">{{ symbol(r.f.confidence) }}</span> {{ r.f.confidence }}</span></td>
+          <td><span class="badge label">{{ r.f.label }}</span></td>
+          @if (explain()) {
+            <td>{{ source(r.f) }}</td>
+            <td>
+              <button
+                type="button"
+                class="btn secondary"
+                [attr.aria-expanded]="expanded().has(r.id)"
+                [attr.aria-controls]="expanded().has(r.id) ? detailId(r.id) : null"
+                (click)="toggle(r.id)"
+              >
+                {{ expanded().has(r.id) ? 'Hide' : 'Show' }} details<span class="visually-hidden"> for {{ r.f.defect }} “{{ r.f.span_text }}”</span>
+              </button>
+            </td>
+          }
+        </tr>
+        @if (explain() && expanded().has(r.id)) {
+          <tr class="detail" [id]="detailId(r.id)" data-testid="finding-detail">
+            <td [attr.colspan]="colCount()">
+              <div class="detail-body">
+                <section class="evidence" aria-labelledby="{{ detailId(r.id) }}-ev">
+                  <h3 id="{{ detailId(r.id) }}-ev">Evidence <span class="muted">(from rules, traceable)</span></h3>
+                  <p>{{ r.f.evidence }}</p>
+                </section>
+                <section class="ai" aria-labelledby="{{ detailId(r.id) }}-ai">
+                  <h3 id="{{ detailId(r.id) }}-ai">AI-generated justification</h3>
+                  <p class="note"><span aria-hidden="true">⚠</span> Written by a language model. It may not faithfully reflect how the finding was produced. Check it against the evidence.</p>
+                  @if (r.f.justification) {
+                    <p>{{ r.f.justification }}</p>
+                  } @else {
+                    <p class="muted">No AI-generated justification for this finding.</p>
+                  }
+                </section>
+              </div>
+            </td>
+          </tr>
+        }
+      }
+    </tbody>
+  </table>
+</ng-template>
+
+@if (counted().length > 0) {
+  <ng-container *ngTemplateOutlet="tableTpl; context: { $implicit: counted(), caption: 'Findings (' + counted().length + ')' }" />
+} @else {
+  <p class="muted">No counted findings.</p>
+}
+
+@if (uncounted().length > 0) {
+  <details class="uncounted" data-testid="possible-issues">
+    <summary>Possible issues, not counted ({{ uncounted().length }})</summary>
+    <p class="muted">Low-confidence findings. They are listed for transparency and are not counted as defects.</p>
+    <ng-container *ngTemplateOutlet="tableTpl; context: { $implicit: uncounted(), caption: 'Possible issues (not counted)' }" />
+  </details>
+}

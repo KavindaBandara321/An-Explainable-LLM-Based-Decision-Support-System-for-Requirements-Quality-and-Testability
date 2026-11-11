@@ -1,0 +1,45 @@
+<h1>Analysis</h1>
+
+<section class="panel src" aria-label="Data source">
+  <p>Showing: <strong data-testid="source-name">{{ store.sourceName() || (store.loading() ? 'loading…' : 'nothing loaded') }}</strong></p>
+  <div class="field">
+    <label for="upload">Load your own results JSON (stays in your browser)</label>
+    <input id="upload" type="file" accept="application/json,.json" (change)="onFile($event)" />
+  </div>
+  <button type="button" class="btn secondary" (click)="store.loadMock()">Reload mock data</button>
+</section>
+
+@if (store.error(); as err) {
+  <div class="alert error" role="alert">{{ err }}</div>
+}
+
+@if (store.stories().length > 0) {
+  <div class="layout">
+    <nav aria-label="Stories">
+      <h2>Stories ({{ store.stories().length }})</h2>
+      <ul class="stories">
+        @for (s of store.stories(); track s.story_id) {
+          <li>
+            <button type="button" [attr.aria-current]="s.story_id === selected()?.story_id" (click)="store.select(s.story_id)" data-testid="story-item">
+              {{ s.story_id }} <span class="muted">· {{ counts().get(s.story_id) }} counted</span>
+              <span class="snippet">{{ snippet(s) }}</span>
+            </button>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    @if (selected(); as story) {
+      <div>
+        <section class="panel" aria-labelledby="story-h">
+          <h2 id="story-h">{{ story.story_id }}</h2>
+          <app-story-highlight [text]="story.text" [findings]="story.findings" />
+          <app-defect-legend />
+        </section>
+        <section class="panel" aria-label="Findings">
+          <app-findings-table [findings]="story.findings" />
+        </section>
+      </div>
+    }
+  </div>
+}
